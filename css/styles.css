@@ -84,7 +84,12 @@ body {
 
 .hero {
   background-color: #1e1823;
-  ;
+  border-radius: 30px;
+  margin-bottom: 72px;
+}
+
+.hero-wrapper {
+  padding: 380px 40px 40px 40px;
 }
 
 h1 {
@@ -93,6 +98,11 @@ h1 {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
 }
 
 .hero-btn {
@@ -113,20 +123,34 @@ h1 {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 
 .features {
   background-color: #1e1823;
+  margin-bottom: 100px;
 }
 
 .features-title {
   display: none;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.features-item {
+  padding: 50px 36px;
+  width: calc((100% - 140px) / 3);
+}
+
 .features-subtitle {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
 }
 
 .features-text {
@@ -134,6 +158,17 @@ h1 {
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.taste {
+  margin-bottom: 100px;
+}
+
+.wrapper-taste {
+  display: flex;
+  flex-direction: column;
+  width: 486px;
+  margin: 0 auto 50px;
 }
 
 .taste-title {
@@ -144,6 +179,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  padding: 0 37.5px 28px;
 }
 
 .taste-part {
@@ -159,6 +195,18 @@ h1 {
   color: #111;
 }
 
+.taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+}
+
+.taste-item {
+  border: solid 1px #FD9222;
+  border-radius: 15px;
+  width: calc((100% - 57px) / 4);
+}
+
 .taste-subtitle {
   font-weight: 600;
   font-size: 14px;
@@ -172,6 +220,10 @@ h1 {
   color: #fff;
 }
 
+.made {
+  margin-bottom: 100px;
+}
+
 .made-title {
   font-weight: 600;
   font-size: 24px;
@@ -180,10 +232,30 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
 }
 
 .made-part {
   color: #fd9222;
+}
+
+.wrapper-made {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.made-image {
+  display: block;
+  border-radius: 15px;
+  width: 600px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.wrapper-made-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .made-subtitle {
